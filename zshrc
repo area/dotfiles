@@ -82,3 +82,9 @@ export PATH="/Users/alex/.pyenv/shims:/usr/local/sbin:/Users/alex/.cabal/bin:/us
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 DEFAULT_USER=alex
+
+export PATH="$PATH:$HOME/npm/bin"
+
+autoload -U zmv
+alias mmv='noglob zmv -W'
+
