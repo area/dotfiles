@@ -83,7 +83,7 @@ export PATH="/Users/alex/.pyenv/shims:/usr/local/sbin:/Users/alex/.cabal/bin:/us
 
 DEFAULT_USER=alex
 
-export PATH="$PATH:$HOME/npm/bin"
+export PATH="$HOME/npm/bin:$PATH"
 
 autoload -U zmv
 alias mmv='noglob zmv -W'
