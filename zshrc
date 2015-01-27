@@ -47,13 +47,13 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git,brew)
+plugins=(git,brew,brew-cask)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/Users/alex/.pyenv/shims:/usr/local/sbin:/Users/alex/.cabal/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/Applications/adt-bundle-mac-x86_64-20130522/sdk/tools:/Applications/adt-bundle-mac-x86_64-20130522/sdk/platform-tools"
+export PATH="/Users/alex/.pyenv/shims:/usr/local/sbin:/Users/alex/.cabal/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/Applications/adt-bundle-mac-x86_64-20130522/sdk/tools:/Applications/adt-bundle-mac-x86_64-20130522/sdk/platform-tools:~/gitfiles/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -82,3 +82,10 @@ export PATH="/Users/alex/.pyenv/shims:/usr/local/sbin:/Users/alex/.cabal/bin:/us
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 DEFAULT_USER=alex
+
+autoload zmv
+alias zmz='noglob zmv'
+alias zcp='noglob zmv -C'
+alias zln='noglob zmv -L'
+alias zsy='noglob zmv -Ls'
+
