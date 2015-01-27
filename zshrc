@@ -53,7 +53,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/Users/alex/.pyenv/shims:/usr/local/sbin:/Users/alex/.cabal/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/Applications/adt-bundle-mac-x86_64-20130522/sdk/tools:/Applications/adt-bundle-mac-x86_64-20130522/sdk/platform-tools:~/gitfiles/bin"
+export PATH="/Users/alex/.pyenv/shims:/usr/local/sbin:/Users/alex/.cabal/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/Applications/adt-bundle-mac-x86_64-20130522/sdk/tools:/Applications/adt-bundle-mac-x86_64-20130522/sdk/platform-tools:$HOME/dotfiles/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
