@@ -88,7 +88,8 @@ alias zmz='noglob zmv'
 alias zcp='noglob zmv -C'
 alias zln='noglob zmv -L'
 alias zsy='noglob zmv -Ls'
-export PATH="$HOME/npm/bin:$PATH"
-
+export PATH="$HOME/.npm/bin:$PATH"
 alias mmv='noglob zmv -W'
 
+#thefuck
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
