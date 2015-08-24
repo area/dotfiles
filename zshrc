@@ -93,3 +93,9 @@ alias mmv='noglob zmv -W'
 
 #thefuck
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  export NVM_DIR=~/.nvm
+  source $(brew --prefix nvm)/nvm.sh
+fi
