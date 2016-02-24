@@ -53,7 +53,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/Users/alex/.pyenv/shims:/usr/local/sbin:/Users/alex/.cabal/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/Applications/adt-bundle-mac-x86_64-20130522/sdk/tools:/Applications/adt-bundle-mac-x86_64-20130522/sdk/platform-tools:$HOME/dotfiles/bin"
+export PATH="/Users/alex/.pyenv/shims:/usr/local/sbin:/Users/alex/.cabal/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/Applications/adt-bundle-mac-x86_64-20130522/sdk/tools:/Applications/adt-bundle-mac-x86_64-20130522/sdk/platform-tools:$HOME/dotfiles/bin:/Applications/Sidekick.app/Contents/Resources/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -88,14 +88,11 @@ alias zmz='noglob zmv'
 alias zcp='noglob zmv -C'
 alias zln='noglob zmv -L'
 alias zsy='noglob zmv -Ls'
-export PATH="/usr/games:$HOME/npm/bin:$PATH"
+
 alias mmv='noglob zmv -W'
 
 #thefuck
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 
+export JAVA_HOME=$(/usr/libexec/java_home)
 
-if [[ "$OSTYPE" == "darwin"* ]]; then
-  export NVM_DIR=~/.nvm
-  source $(brew --prefix nvm)/nvm.sh
-fi
